@@ -1,1 +1,1 @@
-# BIT_MAGIC-
+# BIT_MAGIC
