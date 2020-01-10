@@ -1,0 +1,25 @@
+//https://practice.geeksforgeeks.org/problems/power-of-2/0
+
+#include <bits/stdc++.h>
+using namespace std;
+//silver_lining
+typedef long long ll ; 
+int main() {
+    
+    ll T ; 
+    cin >> T ; 
+    while ( T-- )
+    {
+        ll n ; 
+        cin >> n ; 
+        double x = log2 ( n ) ; 
+        ll y = log2 ( n ) ; 
+        if ( x - y == 0 )
+            cout << "YES" << endl ; 
+        else
+            cout << "NO" << endl ; 
+    }
+
+	//code
+	return 0;
+}
