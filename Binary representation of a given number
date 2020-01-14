@@ -1,0 +1,31 @@
+//https://practice.geeksforgeeks.org/problems/binary-representation/0
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll ; 
+//Silver_Lining 
+int main() {
+    
+    
+    ll n ; 
+    cin >> n ; 
+    while ( n--  )
+    {
+        ll x ;
+        string ans ; 
+        cin >> x ; 
+        while ( x )
+        {
+            if ( ( x & 1 ) )
+                ans += '1' ; 
+            else 
+                ans += '0' ; 
+            x = x / 2 ; 
+        }
+        while ( ans .length() < 14 )
+            ans += '0' ; 
+        reverse ( ans.begin() , ans.end() ) ; 
+        cout << ans << endl ; 
+    }
+	//code
+	return 0;
+}
