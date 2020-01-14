@@ -1,0 +1,18 @@
+//https://practice.geeksforgeeks.org/problems/equal-sum-and-xor/1
+
+//Silver_Lining 
+int countValues (int n)
+{
+    
+    int cnt = 0 ; 
+    while ( n )
+    {
+        if ( ( n  & 1)  == 0 )
+            cnt ++ ; 
+        n = n / 2 ; 
+    }
+    
+    return pow ( 2 ,  cnt ) ; 
+   //Your code here 
+}
+ 
