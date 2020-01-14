@@ -1,0 +1,27 @@
+//https://practice.geeksforgeeks.org/problems/faithful-numbers/0
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll ; 
+// Silver_Lining 
+int main() {
+    
+    
+    ll T ; 
+    cin >> T ; 
+    while ( T-- )
+    {
+        ll n , i = 0 , ans = 0 , pp = 1  ; 
+        cin >> n ; 
+        while ( n )
+        {
+            if (  n & 1 )
+                ans = ans + pp ; 
+            pp = pp * 7 ; 
+            n = n / 2 ; 
+        }
+        
+        cout << ans << endl ; 
+    }
+	//code
+	return 0;
+}
