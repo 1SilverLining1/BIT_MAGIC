@@ -1,0 +1,30 @@
+//https://practice.geeksforgeeks.org/problems/reverse-bits/0?fbclid=IwAR0n07upsJBshNAFv8mRo-n_gkj0y66_JZhyIL1Vxmmvs2wGd_-rcRxYY-E
+
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll ; 
+//Silver_Lining 
+
+int main() {
+    
+    
+    ll T ; 
+    cin >> T ; 
+    while ( T -- )
+    {
+        ll n ; 
+        cin >> n ; 
+        ll x = 31 ; 
+        ll res = 0 ; 
+        while ( n )
+        {
+            if ( n & 1 )
+                res = res +  pow ( 2 , x   ) ; 
+            n = n / 2 ; 
+            x -- ; 
+        }
+        
+        cout << res << endl ; 
+    }
+	//code
+	
