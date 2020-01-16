@@ -1,0 +1,37 @@
+//https://www.codechef.com/AITC2019/problems/SAHIL// " silver_lining ---> After  cloudy days there are beutiful rainbow sunny  days <3 " 
+ 
+ 
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll ; 
+
+
+int main()
+{
+	ll T ; 
+	cin >> T ; 
+	
+	while ( T-- )
+	{
+		ll n ; 
+		cin >> n ; 
+		if ( n - 1 == 0 ) 
+			cout << "NULL"   ; 
+		else 
+		{
+			ll x = n - 1 , p = 1 ; 
+			while ( x )
+			{
+				if ( ( x & 1) == 1  ) 
+					cout << p << " " ; 
+				x = x / 2 ;
+				p = p * 3 ; 
+			}
+		}
+		
+		
+		cout << endl ; 
+	}
+	
+}           
+ 
